@@ -13,6 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/clients")
+@CrossOrigin(origins = "${allowed-origin}", maxAge = 3600)
 public class ClientsController {
     private final ClientRepository clientRepository;
 
